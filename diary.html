@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        
+    <meta charset="UTF-8">
+    <title>일기장</title>
+
+ </head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li role="presentation" ><a href="index.html">자기소개</a></li>
+            <li role="presentation" class="active"><a href="diary.html">일기장</a></li>
+            <li role="presentation"><a href="goal.html">나의목표</a></li>
+          </ul>
+    <h2>나의 일기장</h2>
+    <form action="diary" method="GET">
+        <div>
+            <label for="title">제목: </label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <label for="mood">나의 기분: </label>
+            <select name="mood" id="mood">
+                <option value="good">좋은날&#x1F60A;</option>
+                <option value="good">그냥그런날&#x1F633;</option>
+                <option value="good">화나는날&#x1F621;</option>
+                <option value="good">우울한날&#x1F622;</option>
+                <option value="good">슬픈날&#x1F62D;</option>
+                <option value="good">미친듯이기쁜날&#x1F601;</option>
+                <option value="good">기타</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="content" id="content" cols="60" rows="15"></textarea>
+        </div>
+        <button type="submit">제출</button>
+    </form><br>
+    </div>
+    
+</body>
+</html>
